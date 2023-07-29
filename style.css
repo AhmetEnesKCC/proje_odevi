@@ -1,0 +1,129 @@
+.max-pad {
+  padding-top: 10rem;
+}
+
+.img-button {
+  width: 168px;
+}
+
+.hero-image {
+  width: 240px;
+}
+
+.hero-start {
+  stop-color: #2937f0;
+}
+
+.hero-end {
+  stop-color: #9f1ae2;
+}
+
+.circle {
+  fill: url(#circleGradient);
+}
+
+.phone-image {
+  width: 268px;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image::after {
+  content: "";
+  display: block;
+  width: 456px;
+  height: 456px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+  border-radius: 50%;
+  background: rgb(41, 55, 240);
+  background: linear-gradient(
+    145deg,
+    rgba(41, 55, 240, 1) 0%,
+    rgba(159, 26, 226, 1) 100%
+  );
+}
+
+.shape-2 {
+  position: absolute;
+  height: 0.75rem;
+  width: 0.75rem;
+  fill: #2937f0;
+  top: 15%;
+  right: 10%;
+}
+
+.section-grad {
+  margin-top: 40px;
+  padding: 30px 0px;
+  background: rgb(41, 55, 240);
+  background: linear-gradient(
+    145deg,
+    rgba(41, 55, 240, 1) 0%,
+    rgba(159, 26, 226, 1) 100%
+  );
+}
+
+.section-grad .container {
+  max-width: 720px;
+}
+
+.complex-section {
+  padding: 40px 0px;
+}
+
+.complex-section .hero-image::after {
+  width: 300px;
+  height: 300px;
+  left: 20%;
+}
+
+.complex-section .shape-2 {
+  position: absolute;
+  height: 0.75rem;
+  width: 0.75rem;
+  fill: #2937f0;
+  top: 85%;
+  left: 3%;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#2937f0, #9f1ae2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta {
+  width: 100%;
+
+  padding: 240px 0px;
+  position: relative;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1620912189865-1e8a33da4c5e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=800&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTg1MDA1Ng&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1500);
+}
+
+.cta::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.button-wrapper {
+  width: max-content;
+}
